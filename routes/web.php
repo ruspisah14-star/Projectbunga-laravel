@@ -8,9 +8,9 @@ Route::get('/', [HomeController::class,'dashboard']);
 Route::get('/regis', [FormController::class,'formregister']);
 Route::post('/welcome', [FormController::class,'kirim']);
 
-//Route::get('/master', function(){
-    //return view('layout/master');
-//});
+Route::get('/master', function(){
+    return view('layout/master');
+});
 
 
 
